@@ -1,5 +1,6 @@
-## Basic mathematical statistics (yes, I know - NumPy would be better, 
-## but I want to make the scripts stand-alone for now).
+# Basic mathematical statistics (yes, I know - NumPy would be better, 
+# but I want to make the scripts stand-alone for now).
+
 
 class DescriptiveStats(object):
     def __init__(self, name, all_values):
@@ -22,7 +23,7 @@ class DescriptiveStats(object):
         std = 0
         mean = self.mean()
         for a in self._all_values:
-            std = std + (a - mean)**2
+            std = std + (a - mean) ** 2
         std = sqrt(std / float(self._protected_n()))
         return std
 
