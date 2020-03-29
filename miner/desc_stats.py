@@ -13,10 +13,10 @@ class DescriptiveStats(object):
         return self.total / float(self._protected_n())
 
     def max_value(self):
-        return max(self._all_values)
+        return max(self._all_values) if len(self._all_values) > 0 else 0
 
     def min_value(self):
-        return min(self._all_values)
+        return min(self._all_values) if len(self._all_values) > 0 else 0
 
     def sd(self):
         from math import sqrt
