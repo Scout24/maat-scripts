@@ -1,8 +1,20 @@
 maat-scripts
 ============
 
-Scripts used to post-process the results from Code Maat.
+Forked from https://github.com/adamtornhill/maat-scripts
 
 These scripts are referenced from my upcoming book [Code as a Crime Scene](http://pragprog.com/book/atcrime/code-as-a-crime-scene).
 
-It's work in progress - none of the scripts is of production quality!
+## Additions / Modifications
+
+### code complexity for project 
+
+Code complexity analysis by evaluating indentation can now be applied to a whole project recursively.
+
+    complexity_analysis.py <path> --recursive
+    
+   
+### json output format
+
+    complexity_analysis.py <path> --recursive --json
+    
