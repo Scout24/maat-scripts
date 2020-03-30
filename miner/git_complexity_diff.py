@@ -1,10 +1,9 @@
 #!/bin/env python
-import sys, subprocess, re
-from collections import defaultdict
 import argparse
-import git_interactions
-import desc_stats
+
 import complexity_calculations
+import desc_stats
+import git_interactions
 
 
 ######################################################################
